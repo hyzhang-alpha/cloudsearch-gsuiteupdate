@@ -1,0 +1,73 @@
+{
+    "objectDefinitions": [
+      {
+        "name": "gsuiteUpdatePost",
+        "options": {
+          "freshnessOptions": {
+            "freshnessProperty": "postDateRaw"
+          },
+          "displayOptions": {
+            "objectDisplayLabel": "GSuite Update",
+            "metalines": [
+              {
+                "properties": [
+                  {
+                    "propertyName": "productTag"
+                  }
+                ]
+              },
+              {
+                "properties": [
+                  {
+                    "propertyName": "postYearMonth"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "propertyDefinitions": [
+          {
+            "name": "postYearMonth",
+            "isReturnable": true,
+            "isFacetable": true,
+            "textPropertyOptions": {
+              "retrievalImportance": {
+                "importance": "HIGHEST"
+              }
+            },
+            "displayOptions": {
+              "displayLabel": "Publish Date"
+            }
+          },
+          {
+            "name": "productTag",
+            "isReturnable": true,
+            "isFacetable": true,
+            "textPropertyOptions": {
+              "retrievalImportance": {
+                "importance": "HIGHEST"
+              },
+              "operatorOptions": {
+                "operatorName": "lable"
+              }
+            },
+            "displayOptions": {
+              "displayLabel": "Labels"
+            }
+          },
+          {
+            "name": "postDateRaw",
+            "isReturnable": false,
+            "isFacetable": false,
+            "datePropertyOptions": {
+              "retrievalImportance": {
+                "importance": "HIGHEST"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
