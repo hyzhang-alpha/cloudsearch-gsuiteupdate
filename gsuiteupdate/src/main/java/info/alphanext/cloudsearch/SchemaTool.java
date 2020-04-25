@@ -28,7 +28,7 @@ public class SchemaTool {
   
       ConfigValue<String> sourceId = Configuration.getString("api.sourceId", null);
       ConfigValue<String> localSchema = Configuration.getString("gsuiteupdate.schema", null);
-  
+    
       if (sourceId.get() == null) {
         throw new IllegalArgumentException("Missing api.sourceId value in configuration");
       }

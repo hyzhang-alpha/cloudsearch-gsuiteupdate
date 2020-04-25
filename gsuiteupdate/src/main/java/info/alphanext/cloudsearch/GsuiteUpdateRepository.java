@@ -141,6 +141,8 @@ public class GsuiteUpdateRepository implements Repository {
         String entryBody = gSuiteUpdateEntry.getEntryMainBody();
         ByteArrayContent byteContent = ByteArrayContent.fromString("text/plain", entryBody);
         
+        log.info("Document Built Successfully - " + title);
+
         return new RepositoryDoc.Builder()
             .setItem(item)
             .setContent(byteContent, IndexingService.ContentFormat.TEXT)

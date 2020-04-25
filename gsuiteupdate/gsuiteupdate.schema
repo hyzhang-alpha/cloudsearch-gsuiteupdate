@@ -34,6 +34,9 @@
             "textPropertyOptions": {
               "retrievalImportance": {
                 "importance": "HIGHEST"
+              },
+              "operatorOptions": {
+                "operatorName": "postdate"
               }
             },
             "displayOptions": {
@@ -49,7 +52,7 @@
                 "importance": "HIGHEST"
               },
               "operatorOptions": {
-                "operatorName": "lable"
+                "operatorName": "label"
               }
             },
             "displayOptions": {
@@ -58,12 +61,16 @@
           },
           {
             "name": "postDateRaw",
-            "isReturnable": false,
-            "isFacetable": false,
+            "isReturnable": true,
             "datePropertyOptions": {
-              "retrievalImportance": {
-                "importance": "HIGHEST"
+              "operatorOptions": {
+                "operatorName": "posted",
+                "lessThanOperatorName": "postedbefore",
+                "greaterThanOperatorName": "posttedafter"
               }
+            },
+            "displayOptions": {
+              "displayLabel": "Posted"
             }
           }
         ]

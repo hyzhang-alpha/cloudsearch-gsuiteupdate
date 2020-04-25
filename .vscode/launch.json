@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GsuiteUpdateConnector<gsuiteupdate>",
+            "request": "launch",
+            "mainClass": "info.alphanext.cloudsearch.GsuiteUpdateConnector",
+            "projectName": "gsuiteupdate",
+            "args": "-Dconfig=.\\gsuiteupdate\\connector-config.properties"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SchemaTool<gsuiteupdate>",
+            "request": "launch",
+            "mainClass": "info.alphanext.cloudsearch.SchemaTool",
+            "projectName": "gsuiteupdate",
+            "args": "-Dconfig=.\\gsuiteupdate\\connector-config.properties"
+        }
+        
+    ]
+}
